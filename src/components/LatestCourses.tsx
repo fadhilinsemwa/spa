@@ -23,8 +23,8 @@ interface CourseCardProps {
   link: string;
 }
 
-const WOO_API_KEY = 'ck_3a939214267dd6761d9e8441187669efad50a010';
-const WOO_API_SECRET = 'cs_a48c5aa75ae4ebff12f42e9b88fb415d90845f4f';
+const WOO_API_KEY = '8474hjheuydss8214267dd6761d9e89efad58742jhus8';
+const WOO_API_SECRET = '3878743843970874jhkjlhdsf87978643jkj';
 
 const fetcher = async (url: string) => {
   const credentials = btoa(`${WOO_API_KEY}:${WOO_API_SECRET}`);
