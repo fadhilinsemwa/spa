@@ -1,6 +1,8 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import useSWR from 'swr';
+import dotenv from 'dotenv';
+dotenv.config();
 
 interface WooCommerceCourse {
   id: number;
@@ -23,8 +25,8 @@ interface CourseCardProps {
   link: string;
 }
 
-const WOO_API_KEY = '8474hjheuydss8214267dd6761d9e89efad58742jhus8';
-const WOO_API_SECRET = '3878743843970874jhkjlhdsf87978643jkj';
+const WOO_API_KEY = process.env.WOO_API_KEY || '';
+const WOO_API_SECRET = process.env.WOO_API_SECRET || '';
 
 const fetcher = async (url: string) => {
   const credentials = btoa(`${WOO_API_KEY}:${WOO_API_SECRET}`);
